@@ -1,14 +1,23 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package computersystemcontrol;
 
 /**
  *
- * @author ASUS
+ * @author SOUMIT
  */
-public class HighResolutionFactory {
+public class HighResolutionFactory extends ResolutionFactory{
+
+    @Override
+    DispDriver getDispDri(String dispRes) {
+        if(dispRes == null) return null;
+        if(dispRes.equalsIgnoreCase("HIGH")) return new HighResolutionDD();
+        return null;
+    }
+
+    @Override
+    PrintDriver getPrintDri(String printRes) {
+        if(printRes == null) return null;
+        if(printRes.equalsIgnoreCase("HIGH")) return new HighResolutionPD();
+        return null;
+    }
     
 }
