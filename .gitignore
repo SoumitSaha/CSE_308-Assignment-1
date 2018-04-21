@@ -1,3 +1,5 @@
 *.pdf
 /Sc2/ComputerSystemControl/nbproject/private/
 /Sc2/ComputerSystemControl/build/
+/Sc1/JavaApplication3/nbproject/private/
+/Sc1/BuilderTest/nbproject/private/
